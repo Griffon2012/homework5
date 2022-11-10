@@ -37,10 +37,10 @@ double GetDiffMaxAndMin(double[] array)
         }
     }
 
-    return max - min;
+    return Math.Round(max - min, 2);
 }
 
-double[] array = GetRandomArrayDouble(10, 0, 100);
+double[] array = GetRandomArrayDouble(10, -100, 100);
 InConsoleWriteDoubleArray(array);
 
 double diff = GetDiffMaxAndMin(array);
